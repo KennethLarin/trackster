@@ -1,0 +1,13 @@
+/* Custom styles for Trackster App */
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Work Sans', sans-serif;
+  color: rgb(74, 74, 74);
+}
+
+header {
+  background-color: rgb(35, 2, 63);
+}

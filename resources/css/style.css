@@ -8,6 +8,24 @@ body {
   color: rgb(74, 74, 74);
 }
 
-header {
+.header {
   background-color: rgb(35, 2, 63);
+  padding: 2rem;
+}
+
+h1 {
+  font-family: 'Righteous', cursive;
+  font-weight: bold;
+  font-size: 2.5rem;
+  color: rgb(255, 0, 171);
+}
+
+input {
+  color: rgb(191, 191, 191);
+  height: 2.5rem;
+  border-radius: 2.5rem;
+}
+
+button {
+  
 }

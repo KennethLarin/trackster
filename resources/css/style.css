@@ -26,6 +26,7 @@ input {
   border-radius: 2.5rem;
 }
 
-button {
-  
+.search-button {
+  background-color: rgb(255, 102, 204);
+  border-radius: 50px;
 }

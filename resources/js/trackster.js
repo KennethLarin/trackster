@@ -1,7 +1,16 @@
 $(document).ready(function() {
   $('#search').click(function() {
+    $('#results').empty();
     Trackster.searchTracksByTitle($('#search-box').val());
   });
+
+  $('#search-box').keypress(function(e) {
+    if (e.which == 13) {
+      $('#results').empty();
+      Trackster.searchTracksByTitle($('#search-box').val());
+    }
+  });
+
 
   const API_KEY = "7e4e79931b06123421ab8955413c0deb";
 
@@ -39,13 +48,15 @@ $(document).ready(function() {
           <div class="col-md-1 play-button"><a href="${this.url}"><i class="far fa-play-circle fa-2x"></i></a></div>
             <div class="col-md-5"><span>${this.name}</span></div>
             <div class="col-md-2"><span>${this.artist}</span></div>
-            <div class="col-md-2"><span>${this.album}</span></div>
+            <div class="col-md-2"><span><img src="${this.image[1]["#text"]}"></span></div>
             <div class="col-md-2"><span>${this.listeners}</span></div></div>`;
-          console.log(this.name);
+          $('#results').append(htmlrowtrack);
+
 
 
         });
         console.log('successful');
+
 
         // console.log(trackCount);
       }});

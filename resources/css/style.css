@@ -34,3 +34,25 @@ input:focus {
   background-color: rgb(255, 102, 204);
   border-radius: 50px;
 }
+
+.search-button:hover {
+  background-color: rgb(255, 0, 171);
+}
+
+.list-results {
+  background-color: rgb(104, 0, 255);
+  padding: 0.5rem;
+}
+
+.list-results h5 {
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+}
+
+.fa-play-circle {
+  color: rgb(255, 0, 171);
+}
+
+.play-button {
+  text-align: right;
+}

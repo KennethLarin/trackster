@@ -11,31 +11,10 @@ $(document).ready(function() {
     }
   });
 
-
   const API_KEY = "7e4e79931b06123421ab8955413c0deb";
 
   var Trackster = {};
 
-
-
-  /*
-    Given an array of track data, create the HTML for a Bootstrap row for each.
-    Append each "row" to the container in the body to display all tracks.
-  */
-  Trackster.renderTracks = function(tracks) {
-  //   let resultLength = Trackster.searchTracksByTitle.success.data.results.trackmatches.lenght;
-  //   for (track = 0; track < resultLength; track++) {
-  //     console.log(track);
-  //     if (track === 30) {
-  //       break;
-  //     }
-  //   }
-  };
-
-  /*
-    Given a search term as a string, query the LastFM API.
-    Render the tracks given in the API query response.
-  */
   Trackster.searchTracksByTitle = function(title) {
 
     $.ajax({
@@ -52,14 +31,7 @@ $(document).ready(function() {
             <div class="col-md-2"><span>${this.listeners}</span></div></div>`;
           $('#results').append(htmlrowtrack);
 
-
-
         });
-        console.log('successful');
-
-
-        // console.log(trackCount);
       }});
-
   };
 });

@@ -45,7 +45,7 @@ $(document).ready(function() {
         $.each(data.results.trackmatches.track , function() {
           let htmlrowtrack =
           `<div class="row align-items-center results">
-          <div class="col-md-1 play-button"><a href="${this.url}"><i class="far fa-play-circle fa-2x"></i></a></div>
+          <div class="col-md-1 play-button"><a href="${this.url}" target="_blank"><i class="far fa-play-circle fa-2x"></i></a></div>
             <div class="col-md-5"><span>${this.name}</span></div>
             <div class="col-md-2"><span>${this.artist}</span></div>
             <div class="col-md-2"><span><img src="${this.image[1]["#text"]}"></span></div>
